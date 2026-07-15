@@ -1,5 +1,5 @@
 ==============================================================
-Procedure-Oriented Programming (POP) : Procedure-Oriented Programming (POP) is a programming style that breaks a large program down into smaller, step-by-step tasks called procedures or functions. Instead of focusing on data, it focuses on the actions (algorithms) required to solve a problem, keeping data and functions completely separate from one another.
+# Procedure-Oriented Programming (POP) : Procedure-Oriented Programming (POP) is a programming style that breaks a large program down into smaller, step-by-step tasks called procedures or functions. Instead of focusing on data, it focuses on the actions (algorithms) required to solve a problem, keeping data and functions completely separate from one another.
 ==============================================================
 #include <stdio.h>
 
