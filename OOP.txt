@@ -1,23 +1,45 @@
-==============================================================
-# Procedure-Oriented Programming (POP) : Procedure-Oriented Programming (POP) is a programming style that breaks a large program down into smaller, step-by-step tasks called procedures or functions. Instead of focusing on data, it focuses on the actions (algorithms) required to solve a problem, keeping data and functions completely separate from one another.
-==============================================================
-#include <stdio.h>
+========================================================================================================
+(1)// Function Prototyping for the following functions: add(), sub(), mul(), div()
+========================================================================================================
+#include <iostream>
+using namespace std;
 
-void greet() {
-    printf("Hello, World!");
+double add(double a, double b);
+double sub(double a, double b);
+double mul(double a, double b);
+double div(double a, double b);
+
+int main(){
+    double num1, num2;
+    cout<<"Enter two number";
+    cin>>num1>>num2;
+    cout<<add(num1, num2)<<endl;
+    cout<<sub(num1, num2)<<endl;
+    cout<<mul(num1, num2)<<endl;
+    if (num2 != 0){
+        cout<<div(num1, num2)<<endl;
+    }else{
+        cout<<"Number can't be divide by zero";
+    }
+
 }
 
-int main() {
-    greet();
-    return 0;
+double add(double a, double b){
+    return a + b;
 }
-==============================================================
-            Program
-             |
-    -----------------
-    |       |       |
- Function1 Function2 Function3
-    |       |       |
-  Task 1  Task 2  Task 3
-==============================================================
-==============================================================
+double sub(double a, double b){
+    return a - b;
+}
+double mul(double a, double b){
+    return a * b;
+}
+double div(double a, double b){
+    return a / b;
+}
+========================================================================================================
+
+========================================================================================================
+========================================================================================================
+========================================================================================================
+========================================================================================================
+========================================================================================================
