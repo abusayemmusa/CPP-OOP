@@ -136,8 +136,34 @@ double area(){
     return a * b;
 }
 ========================================================================================================
-
+(6)// Write a CPP program to show your information using the function. 
 ========================================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function to display personal information
+void showInformation(string name, int age, string city, string profession) {
+    cout << "Name       : " << name << endl;
+    cout << "Age        : " << age << endl;
+    cout << "City       : " << city << endl;
+    cout << "Profession : " << profession << endl;
+}
+
+int main() {
+    // Storing details in variables
+    string myName = "Tanvir Ahmed";
+    int myAge = 21;
+    string myCity = "Rangpur";
+    string myProfession = "Computer Science Student";
+
+    // Calling the function to print the information
+    showInformation(myName, myAge, myCity, myProfession);
+
+    return 0;
+}
+========================================================================================================
+
 ========================================================================================================
 ========================================================================================================
 ========================================================================================================
