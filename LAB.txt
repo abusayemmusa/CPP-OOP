@@ -11,6 +11,290 @@ int main(){
     return 0;
 }
 ========================================================================================================
+(2)Assignment 4
+Input 10 numbers with comments in each line.
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a, b, c, d, e, f, g, h, i, j;
+    cout<<"Enter 10 numbers: "<<endl;
+    cin>>a>>b>>c>>d>>e>>f>>g>>h>>i>>j;
+    cout<<"1st number is: "<<a<<endl;
+    cout<<"2nd number is: "<<b<<endl;
+    cout<<"3rd number is: "<<c<<endl;
+    cout<<"4th number is: "<<d<<endl;
+    cout<<"5th number is: "<<e<<endl;
+    cout<<"6th number is: "<<f<<endl;
+    cout<<"7th number is: "<<g<<endl;
+    cout<<"8th number is: "<<h<<endl;
+    cout<<"9th number is: "<<i<<endl;
+    cout<<"10th number is: "<<j<<endl;
+    return 0;
+}
+========================================================================================================
+(3)Assignment 10
+Write a cpp to add, divide, multiply two numbers by user input.
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num1, num2;
+    cout<<"Enter two numbers: "<<endl;
+    cin>>num1>>num2;
+    cout<<"Addition two numbers is: "<<num1 + num2<<endl;
+    cout<<"Subtraction two numbers is: "<<num1 - num2<<endl;
+    cout<<"Multiplication two numbers is: "<<num1 * num2<<endl;
+    cout<<"Divition two numbers is: "<<num1 / num2<<endl;
+    return 0;
+}
+========================================================================================================
+(4)Assignment 10
+Write a cpp to add, subtract, multiply, divide, square.
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num1 = 10;
+    int num2 = 5;
+    cout<<"Addition two numbers is: "<<num1 + num2<<endl;
+    cout<<"Subtraction two numbers is: "<<num1 - num2<<endl;
+    cout<<"Multiplication two numbers is: "<<num1 * num2<<endl;
+    cout<<"Divition two numbers is: "<<num1 / num2<<endl;
+    cout<<"Squre first number is: "<<num1 * num1<<endl;
+    cout<<"Squre secend number is: "<<num2 * num2<<endl;
+    return 0;
+}
+========================================================================================================
+(5)Assignment 11
+Write a C++ program using Function Prototyping for the following functions: add(), sub(), mul(), div().
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+// Function Prototypes (Declarations)
+double add(double a, double b);
+double subtract(double a, double b);
+double multiply(double a, double b);
+double divide(double a, double b);
+double square(double a);
+
+int main() {
+    double num1, num2;
+    cout << "Enter the first number: ";
+    cin >> num1;
+    cout << "Enter the second number: ";
+    cin >> num2;
+    cout << "Addition: " << add(num1, num2) << endl;
+    cout << "Subtraction: " << subtract(num1, num2) << endl;
+    cout << "Multiplication: " << multiply(num1, num2) << endl;
+    
+    if (num2 != 0) {
+        cout << "Division: " << divide(num1, num2) << endl;
+    } else {
+        cout << "Division: Cannot divide by zero." << endl;
+    }
+
+    cout << "Square of " << num1 << ": " << square(num1) << endl;
+    cout << "Square of " << num2 << ": " << square(num2) << endl;
+
+    return 0;
+}
+
+// Function Definitions
+double add(double a, double b) {
+    return a + b;
+}
+
+double subtract(double a, double b) {
+    return a - b;
+}
+
+double multiply(double a, double b) {
+    return a * b;
+}
+
+double divide(double a, double b) {
+    return a / b;
+}
+
+double square(double a) {
+    return a * a;
+}
+========================================================================================================
+(6)Assignment 12
+Write a CPP program to calculate the area of the Circle. (Input from user)
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+/*
+int main(){
+    float pi, r, A;
+    pi = 3.14;
+    pi * r * r;
+    cout<<"redius: ";
+    cin>>r;
+    cout<<"Circle area is "<<pi * r * r;
+    return 0;
+}
+*/
+
+double area();
+
+int main(){
+    cout<<"area is: "<<area();
+    return 0;
+}
+
+double area(){
+    double pi = 3.14, r;
+    cout<<"Enter redius: ";
+    cin>>r;
+    return pi * r * r;
+}
+========================================================================================================
+(7)Assignment 12
+Write a CPP program to calculate the area of the Triangle. (Input from user)
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+/*
+int main(){
+    // a = .5 * b * h
+    double b, h;
+    cout<<"Enter Base and Height"<<endl;
+    cin>>b>>h;
+    cout<<"Area is: "<<.5 * b * h;
+    return 0;
+}
+*/
+double area();
+
+int main(){
+    cout<<area();
+    return 0;
+}
+
+double area(){
+    // a = .5 * b * h
+    double b, h;
+    cout<<"Enter Base and Height"<<endl;
+    cin>>b>>h;
+    return .5 * b * h;
+}
+========================================================================================================
+(8)Assignment 12
+Write a CPP program to calculate the area of Square. (Input from user) 
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+double area();
+
+int main(){
+    cout<<area();
+    return 0;
+}
+
+double area(){
+    // A = a * a
+    double a;
+    cout<<"Enter single number: ";
+    cin>>a;
+    return a * a;
+}
+========================================================================================================
+(9)Assignment 12
+Write a CPP program to calculate the area of Rectangle. (Input from user) 
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+double area();
+int main(){
+    cout<<area();
+    return 0;
+}
+double area(){
+    // A = a * b
+    double a, b;
+    cout<<"Enter two numbers: ";
+    cin>>a>>b;
+    return a * b;
+}
+========================================================================================================
+(10)Assignment 12
+Write a CPP program to show your information using the function
+========================================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function to display personal information
+void showInformation(string name, int age, string city, string profession) {
+    cout << "Name       : " << name << endl;
+    cout << "Age        : " << age << endl;
+    cout << "City       : " << city << endl;
+    cout << "Profession : " << profession << endl;
+}
+
+int main() {
+    // Storing details in variables
+    string myName = "Tanvir Ahmed";
+    int myAge = 21;
+    string myCity = "Rangpur";
+    string myProfession = "Computer Science Student";
+
+    // Calling the function to print the information
+    showInformation(myName, myAge, myCity, myProfession);
+
+    return 0;
+}
+========================================================================================================
+(11)Assignment 12
+Write a cpp to swap two variables
+========================================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    int a = 10;
+    int b = 20;
+    int temp = a;
+    a = b;
+    b = temp;
+    cout<<a<<" "<<b;
+    return 0;
+}
+========================================================================================================
+(12)Assignment 12
+Write a CPP program to swap variables using Function Call by Reference
+========================================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+
+void swap(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main(){
+    int x = 10;
+    int y = 20;
+    cout<<"Before: "<<x <<" "<<y<<endl;
+    swap(x, y);
+    cout<<"After:  "<<x<<" "<< y<<endl;
+    return 0;
+}
+========================================================================================================
 ========================================================================================================
 
 
