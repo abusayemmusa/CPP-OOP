@@ -373,6 +373,25 @@ Write a CPP program to overload area() function.
 ========================================================================================================
 
 ========================================================================================================
+(16)Assignment 13
+Write a CPP program using Inline Function.
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+// Inline function to calculate the square of a number
+inline int square(int x) {
+    return x * x;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 8;
+
+    // The compiler may replace these calls directly with the function body
+    cout << "Square of " << num1 << ": " << square(num1) << endl;
+    return 0;
+}
 ========================================================================================================
 ========================================================================================================
 
