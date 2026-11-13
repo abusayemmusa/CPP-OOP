@@ -428,6 +428,22 @@ int main() {
 (17)Assignment 14
 Write a C++ program to find the factorial of a number.
 ========================================================================================================
+#include <iostream>
+using namespace std;
+
+int fact(int n){
+    if (n == 0){
+        return 1;
+    }else{
+        return n * fact(n-1);
+    }
+}
+
+int main() 
+{
+    cout << "factorial is: "<<fact(5);
+    return 0;
+}
 ========================================================================================================
 (18)Assignment 15
 Define a default argument with an example.
