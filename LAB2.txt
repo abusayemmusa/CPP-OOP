@@ -89,6 +89,32 @@ int main(){
 }
 ========================================================================================================
 ========================================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Data {
+private:
+    int id; // Member variable accessible by all class functions
+
+public:
+    // Setter: assigns a value to id
+    void setData(int newId) {
+        id = newId;
+    }
+
+    // Getter: returns the value of id
+    int getData() {
+        return id;
+    }
+};
+
+int main() {
+    Data d;
+    d.setData(10);        // Set the value first
+    cout << d.getData();  // Output: 10
+    return 0;
+}
 ========================================================================================================
 ========================================================================================================
 ========================================================================================================
