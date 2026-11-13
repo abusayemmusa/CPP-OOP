@@ -264,3 +264,44 @@ int main() {
     return 0;
 }
 ========================================================================================================
+Friend Function
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+class DEF;
+
+class ABC{
+    private:
+        double age;
+    public:
+    ABC (){
+        age = 22;
+    }
+
+    friend void add(ABC a, DEF b);
+};
+
+class DEF{
+    private:
+        double marks;
+    public:
+    DEF (){
+        marks = 78.6;
+    }
+    friend void add(ABC a, DEF b);
+};
+
+void add(ABC a, DEF b){
+    cout<<"age is "<<a.age<<endl;
+    cout<<"marks is "<<b.marks;
+}
+
+
+int main(){
+    ABC obja;
+    DEF objb;
+    add(obja, objb);
+    return 0;
+}
+========================================================================================================
