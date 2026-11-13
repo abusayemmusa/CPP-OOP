@@ -371,7 +371,23 @@ int main() {
 (15)Assignment 12
 Write a CPP program to overload area() function.
 ========================================================================================================
+#include <iostream>
+using namespace std;
 
+double redius(double r){
+    return 3.14159 * r * r;
+}
+double rectangle(double w, double l){
+    return w * l;
+}
+
+int main() {
+    double num1 = 11;
+    double num2 = 5;
+    cout<<redius(num1)<<endl;
+    cout<<rectangle(num1, num2)<<endl;
+    return 0;
+}
 ========================================================================================================
 (16)Assignment 13
 Write a CPP program using Inline Function.
