@@ -463,7 +463,7 @@ int main()
     return 0;
 }
 ========================================================================================================
-Assignment 8
+(19)Assignment 8
 Define Structure with code.
 ========================================================================================================
 #include <iostream>
@@ -485,8 +485,29 @@ int main()
     return 0;
 }
 ========================================================================================================
-
+Assignment 8
+Define Union with code. 
 ========================================================================================================
+#include <iostream>
+using namespace std;
+
+union Data{
+    int i;
+    float f;
+    char c;
+};
+
+int main() 
+{
+    Data v;
+    v.i = 10;
+    v.f = 3.14;
+    v.c = 'A';
+    cout<<"integer: "<<v.i<<endl;
+    cout<<"float: "<<v.f<<endl;
+    cout<<"Character: "<<v.c<<endl;
+    return 0;
+}
 ========================================================================================================
 Assignment 15
 Write 2 C++ programs using and without default arguments.
@@ -522,6 +543,30 @@ int main()
     cout<<celler<<endl;
     cout<<flower<<endl;
     cout<<squre<<endl;
+    return 0;
+}
+========================================================================================================
+Assignment 8
+Define Union with code. 
+========================================================================================================
+#include <iostream>
+using namespace std;
+
+union Data{
+    int i;
+    float f;
+    char c;
+};
+
+int main() 
+{
+    Data v;
+    v.i = 10;
+    v.f = 3.14;
+    v.c = 'A';
+    cout<<"integer: "<<v.i<<endl;
+    cout<<"float: "<<v.f<<endl;
+    cout<<"Character: "<<v.c<<endl;
     return 0;
 }
 ========================================================================================================
