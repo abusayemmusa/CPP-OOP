@@ -503,5 +503,27 @@ int main(){
     cout<<"area: "<<area(10, 12)<<endl;
 }
 ========================================================================================================
+Assignment 15
+Write a C++ program using pow (), Sqrt (), Ceil (), floor ().
+========================================================================================================
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main() 
+{
+    double a = 10.66;
+    double b = 4;
+    double power = pow(a, b);
+    double celler = ceil(a);
+    double flower = floor(a);
+    double squre = sqrt(b);
+    cout<<power<<endl;
+    cout<<celler<<endl;
+    cout<<flower<<endl;
+    cout<<squre<<endl;
+    return 0;
+}
+========================================================================================================
 
 
